@@ -1,0 +1,19 @@
+// Basic Styles • Overrides
+
+// Box sizing
+html {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+// Links
+a {
+    text-decoration: none;
+}

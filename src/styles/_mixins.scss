@@ -1,0 +1,18 @@
+// Useful Mixins
+
+@import './variables';
+
+// Breakpoints
+@mixin breakpoint($class) {
+  @if $class == small {
+    @media (max-width: $screen-small) { @content; }
+  }
+ 
+  @else if $class == medium {
+    @media (min-width: $screen-medium) { @content; }
+  }
+ 
+  @else if $class == large {
+    @media (min-width: $screen-large) { @content; }
+  }
+}
