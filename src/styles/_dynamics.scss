@@ -1,0 +1,39 @@
+// Global Dynamic Variables
+@import './mixins';
+
+:root {
+	@include breakpoint(small) {
+		--borderMargin-horizontal: 16px;
+		--borderMargin-vertical: 16px;
+		--innerMargin: 6vw;
+		--verticalSpacer: 16px;
+	}
+
+	@include breakpoint(medium) {
+		--borderMargin-horizontal: 3.2vw;
+		--borderMargin-vertical: 2.8vw;
+		--innerMargin: 10vw;
+		--verticalSpacer: 2vw;
+	}
+
+	@include breakpoint(large) {
+		--borderMargin-horizontal: 2.5vw;
+		--borderMargin-vertical: 2.5vw;
+		--innerMargin: 10vw;
+		--verticalSpacer: 2.5vw;
+	}
+
+	--innerMargin_025x: calc(var(--innerMargin) / 4);
+	--innerMargin_05x: calc(var(--innerMargin) / 2);
+	--innerMargin_2x: calc(var(--innerMargin) * 2);
+	--innerMargin_3x: calc(var(--innerMargin) * 3);
+	--innerMargin_4x: calc(var(--innerMargin) * 4);
+	--innerMargin_5x: calc(var(--innerMargin) * 5);
+	--innerMargin_8x: calc(var(--innerMargin) * 8);
+
+	--verticalSpacer_025x: calc(var(--verticalSpacer) / 4);
+	--verticalSpacer_05x: calc(var(--verticalSpacer) / 2);
+	--verticalSpacer_2x: calc(var(--verticalSpacer) * 2);
+	--verticalSpacer_3x: calc(var(--verticalSpacer) * 3);
+	--verticalSpacer_4x: calc(var(--verticalSpacer) * 4);
+}

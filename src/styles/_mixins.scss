@@ -16,3 +16,29 @@
     @media (min-width: $screen-large) { @content; }
   }
 }
+
+// Interpolate a value over a set range between two breakpoints: https://codepen.io/MadeByMike/pen/vNrvdZ
+@mixin interpolate($properties, $min-screen, $max-screen, $min-value, $max-value) {
+  & {
+      @each $property in $properties {
+          #{$property}: $min-value;
+      }
+
+      @media screen and (min-width: $min-screen) {
+          @each $property in $properties {
+              #{$property}: calc-interpolation(
+                  $min-screen,
+                  $min-value,
+                  $max-screen,
+                  $max-value
+              );
+          }
+      }
+
+      @media screen and (min-width: $max-screen) {
+          @each $property in $properties {
+              #{$property}: $max-value;
+          }
+      }
+  }
+}

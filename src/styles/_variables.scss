@@ -1,25 +1,32 @@
 // Global Variables
 
-// Screen sizes
-$screen-small: 576px;
-$screen-medium: 768px;
-$screen-lg: 992px;
+// Breakpoint sizes
+$screen-small: 556px;
+$screen-medium: 557px;
+$screen-large: 1080px;
+
+// Screen sizes for fluid responsive method
+$min-window: 767px;
+$max_window: 1080px;
 
 // Colors
-$textColor: #42474C;
-$textLight1Color: #6b7177;
+$red: #d74139;
+$black: #191818;
+$pitchBlack: #000000;
+$offWhite: #dfded7;
+$white: #ffffff;
+$sepia: #8c724e;
+$green: #066234;
+$transparent: rgba(0, 0, 0, 0);
 
-$primaryDark2Color: #002e25;
-$primaryDark1Color: #004C3F;
-$primaryColor: #008060;
-$primaryLight1Color: #C1F0D0;
-$primaryLight2Color: #EFFCFA;
+// Typography
+$min-rem: 16px;
+$max-rem: 20px;
 
-$secondaryColor: #906509;
-$secondaryLight1Color: #FBF7ED;
-$secondaryLight2Color: #FFF8F6;
-$secondaryLight3Color: #E2E6DC;
-$secondaryLight4Color: #EDE8DB;
-
-$warningColor: #C43256;
-$warningLight1Color: #c432571f;
+// Ratios for headings (applies easings throughout the breakpoints)
+$min-h1: $min-rem * 3;
+$max-h1: $max-rem * 5;
+$min-h2: $min-rem * 2;
+$max-h2: $max-rem * 3;
+$min-h3: $min-rem * 1.5;
+$max-h3: $max-rem * 2;
