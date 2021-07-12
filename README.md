@@ -1,1 +1,1 @@
-Template for standard react projects with react-three-fiber for webgl implementations
+Template for non-standard react projects with react-three-fiber for webgl implementations
